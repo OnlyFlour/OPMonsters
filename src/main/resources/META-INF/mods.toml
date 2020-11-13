@@ -1,18 +1,19 @@
 modLoader="javafml" #mandatory
 loaderVersion="[34,)" #mandatory
 license="MIT"
-issueTrackerURL="http://my.issue.tracker/" #optional
+issueTrackerURL="https://github.com/Johan2403/OPMonsters/issues" #optional
 [[mods]] #mandatory
 modId="opmonsters" #mandatory
 version="${version}" #mandatory
 displayName="OP Monsters" #mandatory
-updateJSONURL="http://myurl.me/" #optional
-displayURL="http://example.com/" #optional
+updateJSONURL="https://gist.githubusercontent.com/Johan2403/c37a351ea7f8b87434ddf81145eaf31f/raw/OPMonstersUpdateJSON.json" #optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/op-monsters" #optional
 logoFile="examplemod.png" #optional
 credits="Thanks to Mom and Dad." #optional
 authors="Johan24" #optional
 description='''
-Description here
+A mod that makes mobs OP. They spawn with diamond armor and more...
+and don't mess with the CREEPER.
 '''
 
 [[dependencies.opmonsters]] #optional
