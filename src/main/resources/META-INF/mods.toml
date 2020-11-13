@@ -1,0 +1,30 @@
+modLoader="javafml" #mandatory
+loaderVersion="[34,)" #mandatory
+license="MIT"
+issueTrackerURL="http://my.issue.tracker/" #optional
+[[mods]] #mandatory
+modId="opmonsters" #mandatory
+version="${version}" #mandatory
+displayName="OP Monsters" #mandatory
+updateJSONURL="http://myurl.me/" #optional
+displayURL="http://example.com/" #optional
+logoFile="examplemod.png" #optional
+credits="Thanks to Mom and Dad." #optional
+authors="Johan24" #optional
+description='''
+Description here
+'''
+
+[[dependencies.opmonsters]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[34,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.opmonsters]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3]"
+    ordering="NONE"
+    side="BOTH"
