@@ -1,0 +1,16 @@
+[
+{
+  "modid": "opmonsters",
+  "name": "OP Monsters",
+  "description": "A mod that makes mobs OP. They spawn with diamond armor and more... \nand don't mess with the CREEPER",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Johan24"],
+  "credits": "Mom and Dad",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
