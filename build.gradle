@@ -24,6 +24,8 @@ version = "1.8.9-1.0"
 group= "johan24.opmonsters" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "opmonsters"
 
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+
 minecraft {
     version = "1.8.9-11.15.1.1722"
     runDir = "run"
