@@ -1,6 +1,6 @@
-package johan24.opmonsters.server.dedicated;
+package mods.johan24.opmonsters.server.dedicated;
 
-import johan24.opmonsters.util.ISidedReference;
+import mods.johan24.opmonsters.util.ISidedReference;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 

@@ -1,6 +1,6 @@
-package johan24.opmonsters.client;
+package mods.johan24.opmonsters.client;
 
-import johan24.opmonsters.util.ISidedReference;
+import mods.johan24.opmonsters.util.ISidedReference;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 

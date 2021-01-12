@@ -1,6 +1,6 @@
-package johan24.opmonsters;
+package mods.johan24.opmonsters;
 
-import johan24.opmonsters.config.OPMonstersConfig;
+import mods.johan24.opmonsters.config.OPMonstersConfig;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.monster.SkeletonEntity;

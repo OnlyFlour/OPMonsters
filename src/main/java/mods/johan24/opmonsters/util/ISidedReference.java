@@ -1,4 +1,4 @@
-package johan24.opmonsters.util;
+package mods.johan24.opmonsters.util;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 

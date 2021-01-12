@@ -1,12 +1,12 @@
-package johan24.opmonsters;
+package mods.johan24.opmonsters;
 
+import mods.johan24.opmonsters.client.ClientReference;
+import mods.johan24.opmonsters.util.ISidedReference;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import johan24.opmonsters.client.ClientReference;
-import johan24.opmonsters.config.OPMonstersConfig;
-import johan24.opmonsters.server.dedicated.DedicatedServerReference;
-import johan24.opmonsters.util.ISidedReference;
+import mods.johan24.opmonsters.config.OPMonstersConfig;
+import mods.johan24.opmonsters.server.dedicated.DedicatedServerReference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;

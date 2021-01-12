@@ -14,8 +14,8 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-version = '1.16.4-1.1'
-group = 'johan24.opmonsters'
+version = '1.16.4-1.1-beta'
+group = 'mods.johan24'
 archivesBaseName = 'OPMonsters'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
@@ -88,17 +88,25 @@ jar {
     }
 }
 
-jar.finalizedBy('reobfJar') 
+jar.finalizedBy('reobfJar')
 
 publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
     repositories {
         maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
+            name = "OPMonstersBuilds"
+            url = uri("https://maven.pkg.github.com/johan2403/opmonsters")
+            credentials {
+                username = project.findProperty('gpr.user') ?: System.getenv('GITHUB_USER')
+                password = project.findProperty('gpr.key') ?: System.getenv('TOKEN')
+            }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            groupId 'mods.johan24'
+            artifactId 'opmonsters'
+            version '1.16.4-1.1-beta'
+            from(components.java)
         }
     }
 }

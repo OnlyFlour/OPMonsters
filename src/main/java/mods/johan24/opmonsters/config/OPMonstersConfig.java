@@ -1,8 +1,8 @@
-package johan24.opmonsters.config;
+package mods.johan24.opmonsters.config;
 
+import mods.johan24.opmonsters.OPMonsters;
 import org.apache.commons.lang3.tuple.Pair;
 
-import johan24.opmonsters.OPMonsters;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
