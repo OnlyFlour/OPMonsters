@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-        GRADLE_ARGS = '--console=plain -Dorg.gradle.jvmargs=-Xmx756M'
+        GRADLE_ARGS = '--no-daemon --console=plain -Dorg.gradle.jvmargs=-Xmx756M'
         DISCORD_WEBHOOK = credentials('discord-jenkins-webhook')
         DISCORD_PREFIX = "Job: ${JOB_NAME} Branch: ${BRANCH_NAME} Build: #${BUILD_NUMBER}"
         JENKINS_HEAD = 'https://wiki.jenkins-ci.org/download/attachments/2916393/headshot.png'
@@ -42,6 +42,19 @@ pipeline {
       steps {
         echo 'Testing OPMonsters'
         sh './gradlew test ${GRADLE_ARGS}'
+      }
+    }
+
+    stage('Publish') {
+      when {
+        not {
+          changeRequest()
+        }
+      }
+
+      steps {
+        echo 'Publish OPMonsters'
+        sh './gradlew publish ${GRADLE_ARGS}'
       }
     }
   }
