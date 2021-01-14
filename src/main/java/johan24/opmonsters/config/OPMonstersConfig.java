@@ -9,7 +9,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class OPMonstersConfig {
-	public static final String CATEGORY_MONSTER_SPAWNING = "monster_spawning";
+	public static final String CATEGORY_ZOMBIES = "Zombie Settings";
+	public static final String CATEGORY_SKELETONS = "Skeleton Settings";
+	public static final String CATEGORY_CREEPERS = "Creeper Settings";
 	
 	public static Configuration config;
 	
@@ -25,16 +27,16 @@ public class OPMonstersConfig {
 	}
 	
 	public static void reloadConfig() {
-		spawnZombieKnights = getSpawningCondition("Spawn Zombie Knights", true, "Set if you want to spawn Zombie Knights");
-		spawnSkeletonArchers = getSpawningCondition("Spawn Skeleton Archers", true, "Set if you want to spawn Skeleton Archers");
-		spawnChargedCreepers = getSpawningCondition("Spawn Charged Creepers", true, "Set if you want to spawn Charged Creepers");
+		spawnZombieKnights = getSpawningCondition("Spawn Zombie Knights", true, "Set if you want to spawn Zombie Knights", CATEGORY_ZOMBIES);
+		spawnSkeletonArchers = getSpawningCondition("Spawn Skeleton Archers", true, "Set if you want to spawn Skeleton Archers", CATEGORY_SKELETONS);
+		spawnChargedCreepers = getSpawningCondition("Spawn Charged Creepers", true, "Set if you want to spawn Charged Creepers", CATEGORY_CREEPERS);
 		
 		if(config.hasChanged())
 			config.save();
 	}
 	
-	private static boolean getSpawningCondition(String name, boolean defaultValue, String comment) {
-		Property property = config.get(CATEGORY_MONSTER_SPAWNING, name, defaultValue, comment);
+	private static boolean getSpawningCondition(String name, boolean defaultValue, String comment, String category) {
+		Property property = config.get(category, name, defaultValue, comment);
 		property.setRequiresWorldRestart(true);
 		return property.getBoolean();
 	}
