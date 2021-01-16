@@ -14,7 +14,7 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-version = '1.16.4-1.1-beta'
+version = '1.16.4-1.1'
 group = 'mods.johan24'
 archivesBaseName = 'OPMonsters'
 
@@ -105,7 +105,7 @@ publishing {
         gpr(MavenPublication) {
             groupId 'mods.johan24'
             artifactId 'opmonsters'
-            version '1.16.4-1.1-beta'
+            version '1.16.4-1.1'
             from(components.java)
         }
     }
