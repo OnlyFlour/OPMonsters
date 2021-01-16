@@ -32,7 +32,6 @@ public class OPMonstersConfig {
 			
 			spawnZombieKnights = builder.comment("Set to true if you want to spawn Zombie Knights")
 					                    .translation("opmonsters.config.common.zombie.spawnZombieKnights")
-					                    .worldRestart()
 					                    .define("spawnZombieKnights", true);
 			builder.pop();
 			
@@ -41,7 +40,6 @@ public class OPMonstersConfig {
 			
 			spawnSkeletonArchers = builder.comment("Set to true if you want to spawn Skeleton Archers")
 					                      .translation("opmonsters.config.common.skeleton.spawnSkeletonArchers")
-					                      .worldRestart()
 					                      .define("spawnSkeletonArchers", true);
 			
 			builder.pop();
@@ -51,7 +49,6 @@ public class OPMonstersConfig {
 			
 			spawnChargedCreepers = builder.comment("Set to true if you want to spawn Charged Creepers")
 					                      .translation("opmonsters.config.common.creeper.spawnChargedCreepers")
-					                      .worldRestart()
 					                      .define("spawnChargedCreepers", true);
 			
 			builder.pop();
