@@ -111,7 +111,7 @@ publishing {
         gpr(MavenPublication) {
             groupId 'mods.johan24'
             artifactId 'opmonsters'
-            version '1.16.4-1.1'
+            version '1.16.4-1.1' + System.getenv("BUILD_NUMBER")
             from(components.java)
         }
     }

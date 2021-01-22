@@ -62,5 +62,5 @@ Kindly submit issues at [GitHub](http://github.com/Johan2403/OPMonsters). I'll t
 use the CurseForge comments to do so.
 
 ### Donate
-I don't ask for donations I just do this for fun and has a hobby, but if you want to 
+I don't ask or accept donations I just do this for fun and as a hobby, but if you want to 
 support me I would like you to share my mods with your friends. I would be really happy.
