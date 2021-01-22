@@ -14,7 +14,13 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-version = '1.16.4-1.1'
+if(System.hasProperty("BUILD_NUMBER")) {
+    version = '1.16.4-1.1-' + System.getenv("BUILD_NUMBER")
+}
+else {
+    version = '1.16.4-1.1'
+}
+
 group = 'mods.johan24'
 archivesBaseName = 'OPMonsters'
 
