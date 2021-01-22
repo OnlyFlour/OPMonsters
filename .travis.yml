@@ -2,8 +2,7 @@ language: java
 os: linux
 dist: focal
 before_install: chmod +x gradlew
-install:
-  - ./gradlew install
+install: ./gradlew assemble
 before_script: ./gradlew check
 script: 
   - ./gradlew build
