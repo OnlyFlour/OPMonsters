@@ -3,9 +3,10 @@ os: linux
 dist: focal
 before_install: chmod +x gradlew
 install:
-  - ./gradlew build
+  - ./gradlew install
+before_script: ./gradlew check
 script: 
-  - ./gradlew test
+  - ./gradlew build
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -17,6 +18,8 @@ cache:
     - $HOME/.gradle/wrapper/
 jdk:
   - openjdk8
+  - openjdk11
+  - openjdk15
 notifications:
   email: false
 after_success:
