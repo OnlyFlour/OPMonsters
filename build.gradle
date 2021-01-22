@@ -14,7 +14,7 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-if(System.hasProperty("BUILD_NUMBER")) {
+if(System.getenv("BUILD_NUMBER") != null) {
     version = '1.16.4-1.1-' + System.getenv("BUILD_NUMBER")
 }
 else {
@@ -111,7 +111,7 @@ publishing {
         gpr(MavenPublication) {
             groupId 'mods.johan24'
             artifactId 'opmonsters'
-            version '1.16.4-1.1' + System.getenv("BUILD_NUMBER")
+            version '1.16.4-1.1-' + System.getenv("BUILD_NUMBER")
             from(components.java)
         }
     }
