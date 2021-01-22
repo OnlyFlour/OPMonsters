@@ -1,6 +1,6 @@
 language: java
 os: linux
-dist: bionic
+dist: focal
 before_install: chmod +x gradlew
 install:
   - ./gradlew build
