@@ -18,20 +18,17 @@ jobs:
   fast_finish: true
   include:
     - stage: openjdk8
-      name: openjdk8
-      install: ./gradlew assemble
+      install: ./gradlew check
       script: ./gradlew build
       
     - stage: openjdk11
-      name: openjdk11
       jdk: openjdk11
-      install: ./gradlew assemble
+      install: ./gradlew check
       script: ./gradlew build
       
     - stage: openjdk15
-      name: openjdk15
       jdk: openjdk15
-      install: ./gradlew assemble
+      install: ./gradlew check
       script: ./gradlew build
       
 notifications:
