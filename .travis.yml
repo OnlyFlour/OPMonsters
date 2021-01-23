@@ -1,7 +1,13 @@
 language: java
 os: linux
 dist: focal
+jdk:
+  - openjdk8
+  - openjdk11
+  - openjdk15
 before_install: chmod +x gradlew
+install: ./gradlew check
+script: ./gradlew build
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -11,26 +17,6 @@ cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-jdk:
-  - openjdk8
-
-jobs:
-  fast_finish: true
-  include:
-    - stage: openjdk8
-      install: ./gradlew check
-      script: ./gradlew build
-      
-    - stage: openjdk11
-      jdk: openjdk11
-      install: ./gradlew check
-      script: ./gradlew build
-      
-    - stage: openjdk15
-      jdk: openjdk15
-      install: ./gradlew check
-      script: ./gradlew build
-      
 notifications:
   email: false
 after_success:
