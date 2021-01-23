@@ -5,8 +5,9 @@ jdk:
   - openjdk8
   - openjdk11
   - openjdk15
-install: true
-before_script: chmod +x gradlew
+before_install: chmod +x gradlew
+install: ./gradlew setupCiWorkspace
+before_script: ./gradlew check
 script: ./gradlew build
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
