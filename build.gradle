@@ -14,7 +14,9 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-if(System.getenv("BUILD_NUMBER") != null) {
+def buildNumber = System.getenv("BUILD_NUMBER")
+
+if(buildNumber != null) {
     version = '1.16.4-1.2.' + System.getenv("BUILD_NUMBER") + '-beta'
 }
 else {
