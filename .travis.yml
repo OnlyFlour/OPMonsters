@@ -13,14 +13,27 @@ cache:
     - $HOME/.gradle/wrapper/
 jdk:
   - openjdk8
-matrix:
-  fast-finish: true
-  
+
+jobs:
+  fast_finish: true
   include:
     - stage: openjdk8
       name: openjdk8
       install: ./gradlew assemble
       script: ./gradlew build
+      
+    - stage: openjdk11
+      name: openjdk11
+      jdk: openjdk11
+      install: ./gradlew assemble
+      script: ./gradlew build
+      
+    - stage: openjdk15
+      name: openjdk15
+      jdk: openjdk15
+      install: ./gradlew assemble
+      script: ./gradlew build
+      
 notifications:
   email: false
 after_success:
