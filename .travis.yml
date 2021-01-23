@@ -6,7 +6,7 @@ jdk:
   - openjdk11
   - openjdk15
 before_install: chmod +x gradlew
-install: ./gradlew setupCIWorkspace
+install: ./gradlew assemble
 before_script: ./gradlew check
 script: ./gradlew build
 before_cache:
