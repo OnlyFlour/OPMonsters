@@ -1,11 +1,11 @@
 language: java
 os: linux
-dist: focal
+dist: bionic
 jdk:
   - openjdk8
   - openjdk11
   - openjdk15
-install: skip
+install: true
 before_script: chmod +x gradlew
 script: ./gradlew build
 before_cache:
