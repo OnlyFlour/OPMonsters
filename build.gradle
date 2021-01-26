@@ -17,10 +17,10 @@ apply plugin: 'maven-publish'
 def buildNumber = System.getenv("BUILD_NUMBER")
 
 if(buildNumber != null) {
-    version = '1.16.4-1.2.' + System.getenv("BUILD_NUMBER") + '-beta'
+    version = '1.16.5-1.1.' + System.getenv("BUILD_NUMBER") + '-beta'
 }
 else {
-    version = '1.16.4-1.2-beta'
+    version = '1.16.5-1.1'
 }
 
 group = 'mods.johan24'
@@ -79,7 +79,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.4-35.1.37'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.0.4'
 }
 
 jar {
@@ -113,7 +113,7 @@ publishing {
         gpr(MavenPublication) {
             groupId 'mods.johan24'
             artifactId 'opmonsters'
-            version '1.16.4-1.2.' + System.getenv("BUILD_NUMBER") + '-beta'
+            version '1.16.5-1.1.' + System.getenv("BUILD_NUMBER") + '-beta'
             from(components.java)
         }
     }
