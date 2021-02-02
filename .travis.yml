@@ -1,10 +1,7 @@
 language: java
 os: linux
 dist: bionic
-jdk:
-  - openjdk8
-  - openjdk11
-  - openjdk15
+jdk: openjdk8
 before_install: chmod +x gradlew
 install: ./gradlew check
 script: ./gradlew build
