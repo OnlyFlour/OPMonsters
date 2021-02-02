@@ -3,8 +3,8 @@ os: linux
 dist: bionic
 jdk: openjdk8
 before_install: chmod +x gradlew
-install: skip
-script: ./gradlew build
+install: ./gradlew check --no-daemon --console=plain
+script: ./gradlew build --no-daemon --console=plain
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
