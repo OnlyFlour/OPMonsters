@@ -11,18 +11,9 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
-apply plugin: 'idea'
 apply plugin: 'maven-publish'
 
-def buildNumber = System.getenv("BUILD_NUMBER")
-
-if(buildNumber != null) {
-    version = '1.16.5-1.1.' + System.getenv("BUILD_NUMBER") + '-beta'
-}
-else {
-    version = '1.16.5-1.1'
-}
-
+version = "${mc_version}-${mod_version}"
 group = 'mods.johan24'
 archivesBaseName = 'OPMonsters'
 
@@ -113,7 +104,7 @@ publishing {
         gpr(MavenPublication) {
             groupId 'mods.johan24'
             artifactId 'opmonsters'
-            version '1.16.5-1.1.' + System.getenv("BUILD_NUMBER") + '-beta'
+            version "${mc_version}-${mod_version}"
             from(components.java)
         }
     }
