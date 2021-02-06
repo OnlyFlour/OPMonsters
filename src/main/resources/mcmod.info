@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "opmonsters",
+  "name": "OP Monsters",
+  "description": "A mod that makes mobs OP. They spawn with diamond armor and more... \nand don't mess with the CREEPER",
   "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "mcversion": "1.12.2",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/op-monsters",
+  "updateUrl": "https://gist.githubusercontent.com/Johan2403/c37a351ea7f8b87434ddf81145eaf31f/raw/OPMonstersUpdateJSON.json",
+  "authorList": ["Johan24"],
+  "credits": "Mom and Dad",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
