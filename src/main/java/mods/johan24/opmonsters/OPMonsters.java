@@ -8,8 +8,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 @Mod(modid = OPMonsters.MODID, name = OPMonsters.NAME, version = OPMonsters.VERSION, acceptedMinecraftVersions = OPMonsters.MC_VERSION)
-public class OPMonsters
-{
+public class OPMonsters {
     public static final String MODID = "opmonsters";
     public static final String NAME = "OP Monsters";
     public static final String MC_VERSION = "1.12.2";
