@@ -37,7 +37,6 @@ public class OPMonstersConfig {
 	
 	private static boolean getSpawningCondition(String name, boolean defaultValue, String comment, String category) {
 		Property property = config.get(category, name, defaultValue, comment);
-		property.setRequiresWorldRestart(true);
 		return property.getBoolean();
 	}
 	
