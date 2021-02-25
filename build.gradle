@@ -28,6 +28,12 @@ dependencies {
 
 }
 
+sourceSets {
+    main {
+        output.resourcesDir = output.getClassesDirs().asPath
+    }
+}
+
 processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
