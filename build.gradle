@@ -28,12 +28,6 @@ dependencies {
 
 }
 
-sourceSets {
-    main {
-        output.resourcesDir = output.getClassesDirs().asPath
-    }
-}
-
 processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
@@ -43,7 +37,7 @@ processResources {
 
         expand 'version':project.version, 'mcversion':project.minecraft.version
     }
-        
+
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
