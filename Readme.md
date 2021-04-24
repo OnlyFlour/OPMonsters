@@ -20,7 +20,7 @@ OPMonsters is a Minecraft Mod created using [Minecraft Forge](http://files.minec
   * Download OPMonsters from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/op-monsters).
   * Now, put the mod into the `mods` folder in your `.minecraft` folder.
   * Open Minecraft Forge and start playing. Enjoy!
-  * If you wish to edit the config then you can find the config in the `.minecraft/config` folder.
+  * If you wish to edit the config then you can find the config in the `.minecraft/saves/<your world name>/serverconfig/opmonsters-server.toml` folder.
 
 #### Mod Developers
   * Fork this repository. Just click on the fork button.
