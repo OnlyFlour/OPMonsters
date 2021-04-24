@@ -1,5 +1,5 @@
 {
-	"opmonsters.config.common.zombie.spawnZombieKnights": "Spawn Zombie Knights",
-	"opmonsters.config.common.skeleton.spawnSkeletonArchers": "Spawn Skeleton Archers",
-	"opmonsters.config.common.creeper.spawnChargedCreepers": "Spawn Charged Creepers"
+	"opmonsters.config.server.zombie.spawnZombieKnights": "Spawn Zombie Knights",
+	"opmonsters.config.server.skeleton.spawnSkeletonArchers": "Spawn Skeleton Archers",
+	"opmonsters.config.server.creeper.spawnChargedCreepers": "Spawn Charged Creepers"
 }

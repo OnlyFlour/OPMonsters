@@ -1,6 +1,6 @@
-package mods.johan24.opmonsters.config;
+package johan24.mods.opmonsters.config;
 
-import mods.johan24.opmonsters.OPMonsters;
+import johan24.mods.opmonsters.OPMonsters;
 import org.apache.commons.lang3.tuple.Pair;
 
 import net.minecraftforge.common.ForgeConfigSpec;
@@ -12,26 +12,26 @@ import net.minecraftforge.fml.config.ModConfig;
 
 @EventBusSubscriber(modid = OPMonsters.MODID, bus = Bus.MOD)
 public class OPMonstersConfig {
-	public static final ForgeConfigSpec commonSpec;
-	public static final Common COMMON;
+	public static final ForgeConfigSpec serverSpec;
+	public static final Server SERVER;
 	
 	static {
-		final Pair<Common, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(Common::new);
-		commonSpec = specPair.getRight();
-		COMMON = specPair.getLeft();
+		final Pair<Server, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(Server::new);
+		serverSpec = specPair.getRight();
+		SERVER = specPair.getLeft();
 	}
 	
-	public static class Common {
+	public static class Server {
 		public final BooleanValue spawnZombieKnights;
 		public final BooleanValue spawnSkeletonArchers;
 		public final BooleanValue spawnChargedCreepers;
 		
-		Common(final ForgeConfigSpec.Builder builder) {
+		Server(final ForgeConfigSpec.Builder builder) {
 			builder.comment("Contains settings related to zombies.")
 			.push("Zombie Settings");
 			
 			spawnZombieKnights = builder.comment("Set to true if you want to spawn Zombie Knights")
-					                    .translation("opmonsters.config.common.zombie.spawnZombieKnights")
+					                    .translation("opmonsters.config.server.zombie.spawnZombieKnights")
 					                    .define("spawnZombieKnights", true);
 			builder.pop();
 			
@@ -39,7 +39,7 @@ public class OPMonstersConfig {
 			.push("Skeleton Settings");
 			
 			spawnSkeletonArchers = builder.comment("Set to true if you want to spawn Skeleton Archers")
-					                      .translation("opmonsters.config.common.skeleton.spawnSkeletonArchers")
+					                      .translation("opmonsters.config.server.skeleton.spawnSkeletonArchers")
 					                      .define("spawnSkeletonArchers", true);
 			
 			builder.pop();
@@ -48,7 +48,7 @@ public class OPMonstersConfig {
 			.push("Creeper Settings");
 			
 			spawnChargedCreepers = builder.comment("Set to true if you want to spawn Charged Creepers")
-					                      .translation("opmonsters.config.common.creeper.spawnChargedCreepers")
+					                      .translation("opmonsters.config.server.creeper.spawnChargedCreepers")
 					                      .define("spawnChargedCreepers", true);
 			
 			builder.pop();
