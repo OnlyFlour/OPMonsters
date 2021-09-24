@@ -110,6 +110,7 @@ publishing {
 
 processResources {
 	inputs.property 'version', project.version
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
 	from(sourceSets.main.resources.srcDirs) {
 		include 'META-INF/mods.toml'
