@@ -57,7 +57,7 @@ SOFTWARE.
 ```
 
 ### Issues
-Kindly submit issues at [GitHub](http://github.com/Johan2403/OPMonsters/issues). I'll try my best to resolve them. But if you need help setting it up 
+Kindly submit issues and feature requests at [GitHub](http://github.com/Johan2403/OPMonsters/issues). I'll try my best to resolve them. But if you need help setting it up 
 use the CurseForge comments to do so.
 
 ### Donate
