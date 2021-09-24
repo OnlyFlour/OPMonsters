@@ -1,6 +1,6 @@
-package johan24.mods.opmonsters;
+package johan.mods.opmonsters;
 
-import johan24.mods.opmonsters.config.OPMonstersConfig;
+import johan.mods.opmonsters.config.OPMonstersConfig;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;

@@ -13,8 +13,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = "${mc_version}-${mod_version}"
-group = "johan24.mods.opmonsters"
-archivesBaseName = 'OPMonsters'
+group = "johan.mods"
+archivesBaseName = "opmonsters"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 

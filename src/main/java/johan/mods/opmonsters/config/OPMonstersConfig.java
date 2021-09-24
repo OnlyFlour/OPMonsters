@@ -1,6 +1,6 @@
-package johan24.mods.opmonsters.config;
+package johan.mods.opmonsters.config;
 
-import johan24.mods.opmonsters.OPMonsters;
+import johan.mods.opmonsters.OPMonsters;
 import org.apache.commons.lang3.tuple.Pair;
 
 import net.minecraftforge.common.ForgeConfigSpec;
