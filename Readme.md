@@ -6,7 +6,7 @@ OPMonsters
 [![Build Status](https://github.com/Johan2403/OPMonsters/actions/workflows/build.yml/badge.svg)](https://github.com/Johan2403/OPMonsters/actions/)
 
 
-OPMonsters is a Minecraft Mod created using [Minecraft Forge](http://files.minecraftforge.net). Makes vanilla monsters harder to kill.
+OPMonsters is a Minecraft Mod created using [Minecraft Forge](https://files.minecraftforge.net). Makes vanilla monsters harder to kill.
 
 ### Features
   * Makes zombies spawn with diamond armor, and a diamond axe.
